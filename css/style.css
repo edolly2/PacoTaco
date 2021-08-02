@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "PacoTaco";
+  padding: 2rem;
+  background-color: black;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  padding: 2rem;
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  background-color: aliceblue;
+}
+
+.title-cont {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.title-cont h1 {
+  white-space: nowrap;
+  font-size: clamp(3.2rem, 4vw, 6rem);
+}
+
+.logo-cont {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+.nav-cont {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PacoTaco';
+    src: url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.eot');
+    src: url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.eot?#iefix') format('embedded-opentype'),
+        url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.woff2') format('woff2'),
+        url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.woff') format('woff'),
+        url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.ttf') format('truetype'),
+        url('StruckBasePERSONALUSEONLY-PERSONALUSEONLY.svg#StruckBasePERSONALUSEONLY-PERSONALUSEONLY') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
