@@ -1,23 +1,106 @@
+/*
+ Theme Name: Paco Taco Theme
+ Description: Eric Portfolio Example Website 
+ Author: Eric Dollinger
+ Author URL:  https://github.com/edolly2/
+ Tags: Personal , Fake Portfolio, Website
+*/
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+* {
+  max-width: 100%;
+  height: auto;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  max-width: 100%;
-  height: auto;
 }
 
 body {
   height: 100%;
   width: 100%;
-  font-family: "PacoTaco";
-  padding: 2rem;
-  background-color: black;
-  overflow: hidden;
+  line-height: 1.5;
+  padding: 1.4rem;
+  /* background-color: black; */
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  /* overflow: hidden; */
+}
+
+h1 {
+  font-size: clamp(6.2rem, 7vw, 9.6rem);
+}
+
+h2 {
+  /* font-size: clamp(4.9rem, 5.6vw, 7.7rem); */
+  font-size: clamp(4rem, 4.5vw, 6.2rem);
+}
+
+h3 {
+  /* font-size: clamp(4rem, 4.5vw, 6.2rem); */
+  font-size: clamp(2.5rem, 2.9vw, 4rem);
+}
+
+h4 {
+  /* font-size: clamp(3.2rem, 3.6vw, 4.9rem); */
+  font-size: clamp(1.8rem, 2.3vw, 3.2rem);
+}
+
+/* h5 {
+  font-size: clamp(2.5rem, 2.9vw, 4rem);
+}
+
+h6 {
+font-size: clamp(1.8rem ,2.3vw, 3.2rem);
+} */
+
+h5,
+h6,
+p,
+a,
+label,
+button,
+input,
+textarea,
+blockquote,
+ul,
+li {
+  font-size: 1.8rem;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+  font-family: "Sedgwick Ave Display", cursive;
+  color: white;
 }
 
 img {
@@ -25,34 +108,56 @@ img {
   height: auto;
 }
 
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid black;
+}
+
 header {
   display: flex;
+  background-color: white;
+  box-shadow: inset 0 0 5rem black;
+  border: 0.73rem solid black;
   /* justify-content: space-evenly; */
   /* align-items: center; */
-  padding: 2rem;
+  padding: 1.4rem;
 }
+
+/* .text-overflow-prevent {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+} */
 
 .page {
   width: 100%;
-  min-height: 100%;
-  background-color: aliceblue;
+  height: 100vh;
+  /* background-color: blue; */
+  position: relative;
 }
 
 .title-cont {
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
+  margin: 1.4rem;
 }
 
 .title-cont h1 {
   white-space: nowrap;
-  font-size: clamp(3.2rem, 4vw, 6rem);
+  text-align: center;
 }
 
 .logo-cont {
   height: auto;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -63,20 +168,201 @@ header {
 .nav-cont {
   display: none;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-image: url("../assets/images/brickwall.png");
+  position: absolute;
+  z-index: 1;
 }
 
-.nav-bar {
+.nav-link {
+  color: white;
+  font-size: clamp(2.5rem, 2.9vw, 4rem);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(0, 149, 79);
+}
+
+.burrito {
+  display: none;
+  height: 4rem;
+  width: auto;
+  position: absolute;
+  margin-left: 1rem;
+}
+
+.nav-dropdown {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  border: 0.73rem solid black;
+  border-top: none;
 }
 
 .nav-list {
   display: flex;
+  flex-direction: column;
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 1.4rem;
+  position: relative;
+}
+
+
+.nav-item:hover + .burrito {
+  display: flex;
+  margin: 1.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-icon-cont {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon {
+  width: 4.9rem;
+  height: auto;
+}
+
+.hamburger-icon:hover {
+cursor: pointer;
+}
+
+
+.title-cont h1, .nav-link {
+  text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black,
+    1px 2px 2px black, 2px 1px 2px black, -1px 2px 2px black, 2px -1px 2px black,
+    1px -2px 2px black, -2px 1px 2px black, -1px -2px 2px black,
+    -2px -1px 2px black, 1px 1px 2px black, -1px -1px 2px black,
+    -1px 1px 2px black, 1px -1px 2px black, 0px 2px 2px black, 2px 0px 2px black,
+    -2px 0px 2px black, 0px -2px 2px black, 0px 1px 2px black, 1px 0px 2px black,
+    0px -1px 2px black, -1px 0px 2px black, 0px 0px 2px black,
+    6px 6px 6px rgb(248, 0, 0), -6px 6px 6px rgb(248, 0, 0),
+    6px -6px 6px rgb(248, 0, 0), 1px 6px 6px rgb(248, 0, 0),
+    6px 1px 6px rgb(248, 0, 0), -1px 6px 6px rgb(248, 0, 0),
+    6px -1px 6px rgb(248, 0, 0), 1px -6px 6px rgb(248, 0, 0),
+    -6px 1px 6px rgb(248, 0, 0), -1px -6px 6px rgb(248, 0, 0),
+    -6px -1px 6px rgb(248, 0, 0), 1px 1px 6px rgb(248, 0, 0),
+    -1px -1px 6px rgb(248, 0, 0), -1px 1px 6px rgb(248, 0, 0),
+    1px -1px 6px rgb(248, 0, 0), 0px 6px 6px rgb(248, 0, 0),
+    6px 0px 6px rgb(248, 0, 0), -6px 0px 6px rgb(248, 0, 0),
+    0px -6px 6px rgb(248, 0, 0), 0px 1px 6px rgb(248, 0, 0),
+    1px 0px 6px rgb(248, 0, 0), 0px -1px 6px rgb(248, 0, 0),
+    -1px 0px 6px rgb(248, 0, 0), 0px 0px 6px rgb(248, 0, 0), 5px 5px 10px black;
+}
+
+
+/* TODO: change burrito to be responsive  */
+
+#slideshow { 
+  margin: 1.4rem auto; 
+  /* position: relative;  */
+  width: 100%; 
+  height: 100%;
+  /* padding: 10px;  */
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+}
+
+#slideshow > div { 
+  /* position: absolute; */
+  width: 100%; 
+  /* top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px;  */
+}
+
+.slideshow-img {
+  width: 100%;
+}
+
+.cards-cont {
+  width: 100%;
+  position: relative;
+  margin: 2.5rem 0; 
+}
+
+.card {
+  text-align: left;
+  background-color:rgb(0, 149, 79) ;
+  margin: 2.5rem 0;
+  height: 30rem;
+  padding: 1.4rem;
+  position: relative;
+}
+
+.card h3 {
+  border-bottom: 2px solid white;
+  color: rgb(248, 0, 0);
+  text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black,
+    1px 2px 2px black, 2px 1px 2px black, -1px 2px 2px black, 2px -1px 2px black,
+    1px -2px 2px black, -2px 1px 2px black, -1px -2px 2px black,
+    -2px -1px 2px black, 1px 1px 2px black, -1px -1px 2px black,
+    -1px 1px 2px black, 1px -1px 2px black, 0px 2px 2px black, 2px 0px 2px black,
+    -2px 0px 2px black, 0px -2px 2px black, 0px 1px 2px black, 1px 0px 2px black,
+    0px -1px 2px black, -1px 0px 2px black, 0px 0px 2px black,
+    6px 6px 6px white, -6px 6px 6px white,
+    6px -6px 6px white, 1px 6px 6px white,
+    6px 1px 6px white, -1px 6px 6px white,
+    6px -1px 6px white, 1px -6px 6px white,
+    -6px 1px 6px white, -1px -6px 6px white,
+    -6px -1px 6px white, 1px 1px 6px white,
+    -1px -1px 6px white, -1px 1px 6px white,
+    1px -1px 6px white, 0px 6px 6px white,
+    6px 0px 6px white, -6px 0px 6px white,
+    0px -6px 6px white, 0px 1px 6px white,
+    1px 0px 6px white, 0px -1px 6px white,
+    -1px 0px 6px white, 0px 0px 6px white, 5px 5px 10px black;
+
+}
+
+.card p {
+  font-size: 1.3rem;
+  margin: 1.4rem 0;
+  position: relative;
+}
+
+.card-btn {
+position: absolute;
+bottom: 1.4rem;
+left: 1.4rem;
+width: 50%;
+padding: 1.4rem 0;
+
+}
+
+.card-info-and-btn-cont {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+@media screen and (min-width: 768px) {
+  .cards-cont {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.4rem;
+  }
+
+  .card {
+    /* min-width: 33.3%; */
+    max-width: 33.3%;
+
+    height: 40rem;
+    margin: 1.8rem;
+  }
+
+  #slideshow { 
+    margin: 1.4rem auto; 
+    /* position: relative;  */
+    width: 70%; 
+    height: 60%;
+    /* padding: 10px;  */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+  }
 }
