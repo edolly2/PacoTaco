@@ -24,16 +24,15 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/app.js"></script>
-
 </head>
 <style>
-    .home-link {
+    .locations-link {
         color: rgb(0, 149, 79);
     }
 </style>
 
 <body>
-    <div class="page home-page">
+    <div class="page locations-page">
 
         <!-- HEADER -->
         <header>
@@ -103,64 +102,30 @@
 
             <!-- PAGE TITLE -->
             <div class="title-cont">
-                <h1>Paco's Taco</h1>
+                <h1>Locations</h1>
             </div>
             <!-- PAGE TITLE END -->
 
-            <div id="slideshow">
-                <div>
-                    <img src="assets/images/slide1.jpg" class="slideshow-img">
-                </div>
-                <div>
-                    <img src="assets/images/slide2.jpg" class="slideshow-img">
-                </div>
-                <div>
-                    <img src="assets/images/slide3.jpg" class="slideshow-img">
-                </div>
-                <div>
-                    <img src="assets/images/slide4.jpg" class="slideshow-img">
-                </div>
+            <!-- LOCATIONS -->
+            <div class="locations-cont bronx-cont">
+                <h2 class="locations-title">Bronx</h2>
+                <p>2300 Southern Blvd, Bronx, NY 10460</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.0598172161253!2d-73.88474848496077!3d40.848610479317266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f4853e108603%3A0xa809e222ab6423e1!2s2300%20Southern%20Blvd%2C%20Bronx%2C%20NY%2010460!5e0!3m2!1sen!2sus!4v1627964119933!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="cards-cont">
-                <div class="card card-1">
-                    <h3>Award Winning Tacos</h3>
-                    <div class="card-info-and-btn-cont">
-                        <p>We pride ourselves on making the best mexican food
-                            you’ll ever have. So much so, that we’ve been named
-                            Bronx's Best taco 10 years in a row. We've also been
-                            named New York's Best taco by the New York Taco
-                            Council. Featured by Urban Spoon, Gourmet Magazine,
-                            and Business Insider, Paco's tacos rack up more
-                            awards year after year.</p>
-                        <button class="btn card-btn">View Our Menu</button>
-                    </div>
-                </div>
-                <div class="card card-2">
-                    <h3>Family Owned Since 1960</h3>
-                    <div class="card-info-and-btn-cont">
-                        <p>Since 1960, we’ve been making our Paco's world famous
-                            tacos. The family secrets have been handed down to
-                            each owner to ensure that your taco is the same one
-                            you fell in love with the first time you ever tried
-                            Paco's, and if it’s your first time, we know you’ll
-                            be back!</p>
-                        <button class="btn card-btn">Read Our Story</button>
-                    </div>
-                </div>
-                <div class="card card-3">
-                    <h3>We'd Love to Hear From You</h3>
-                    <div class="card-info-and-btn-cont">
-                        <p>We are so thankful to everyone who played a role in
-                            making Paco's what it is today. If for any reason
-                            you aren’t completely satisfied with your
-                            experience, please let us know. We value each and
-                            every one of you more than you know. After all,
-                            you’re a part of this family too.</p>
-                        <button class="btn card-btn">Contact Us</button>
-                    </div>
-                </div>
+            <div class="locations-cont brooklyn-cont">
+                <h2 class="locations-title">Brooklyn</h2>
+                <p>334 Furman St, Brooklyn, NY 11201</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0815952630614!2d-74.00147058496641!3d40.69420057933383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46be45dd61%3A0x51e4a60885674db8!2s334%20Furman%20St%2C%20Brooklyn%2C%20NY%2011201!5e0!3m2!1sen!2sus!4v1627964073199!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+
+            <div class="locations-cont queens-cont">
+                <h2 class="locations-title">Manhattan</h2>
+                <p>72 Terrace Dr, New York, NY 10021</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12085.143472108783!2d-73.97090716285497!3d40.77772907769405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25892a6168611%3A0x9d94703beba53b51!2sBethesda%20Terrace!5e0!3m2!1sen!2sus!4v1627964012496!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="last-iframe"></iframe>
+            </div>
+            <!-- LOCATIONS END -->
+
 
         </main>
         <!-- MAIN END -->
@@ -169,10 +134,14 @@
         <footer>
             <div class="footer-schedule-cont">
                 <div class="copyright-cont">
-                    <small class="copyright">&#169;copyright 2021 Paco's Taco</small>
+                    <small class="copyright">&#169;copyright 2021 Paco's
+                        Taco</small>
                 </div>
                 <h4>Schedule</h4>
-<small class="footer-schedule">Monday: 11am-9pm<br/>Tuesday: 11am–9pm<br/>Wednesday: 11am–9pm<br/>Thursday: 11am-9pm<br/>Friday: 11am-9pm<br/>Saturday: 10am-11pm<br/>Sunday: CLOSED</small>
+                <small class="footer-schedule">Monday: 11am-9pm<br />Tuesday:
+                    11am–9pm<br />Wednesday: 11am–9pm<br />Thursday:
+                    11am-9pm<br />Friday: 11am-9pm<br />Saturday:
+                    10am-11pm<br />Sunday: CLOSED</small>
             </div>
             <div class="social-media-cont">
                 <i class="fab fa-facebook"></i>
