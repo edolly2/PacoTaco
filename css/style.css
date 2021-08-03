@@ -187,6 +187,8 @@ header {
   background-image: url("../assets/images/brickwall.png");
   position: absolute;
   z-index: 1;
+  left: 0;
+  right: 0;
 }
 
 .nav-link {
