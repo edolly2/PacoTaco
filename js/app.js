@@ -99,3 +99,55 @@ $(document).ready(() => {
 //     }, 4000);
 //   });
   
+$(document).ready(function() {
+  // $(".popup-backdrop").removeClass('hidden');
+    // $(".popup-backdrop").fadeTo(200, 1);
+    if($(".popup-backdrop").hasClass('is-visible') && $(window).width() > 1025) {
+      $('body').css({'overflow': 'hidden', 'padding-right': '29px'});
+    }
+    else if($(".popup-backdrop").hasClass('is-visible') && $(window).width() < 1025) {
+      $('body').css('overflow', 'hidden');
+    }
+    else {
+    $(".popup-backdrop").removeClass('is-visible');
+    $(".popup-backdrop").addClass('is-hidden');
+      $('body').css({'overflow-x': 'hidden', 'overflow-y': 'auto', 'padding': '1.4rem'});
+    }
+  $(".popup-btn").click(function() {
+    if(!$('.popup-backdrop').hasClass('is-hidden')) {
+      $(".popup-backdrop").addClass('is-hidden');
+      $(".popup-backdrop").removeClass('is-visible');
+      $('body').css({'overflow-x': 'hidden', 'overflow-y': 'auto', 'padding': '1.4rem'});
+    }
+  });
+});
+
+// const showModal = function (e) {
+//   modal.classList.toggle("hidden");
+
+//   if (!modal.classList.contains("hidden")) {
+//       // Disable scroll
+//       body.style.overflow = "hidden";
+//   } else {
+//       // Enable scroll
+//       body.style.overflow = "auto";
+//   }
+// };
+// $(document).ready(() => {
+
+//   if ($(window).width() < 960) {
+//     alert('Less than 960');
+//   }
+//   else {
+//     alert('More than 960');
+//   }
+  
+//   $(window).resize(function() {
+//     if ($(window).width() < 960) {
+//       alert('Less than 960');
+//     }
+//  else {
+//    alert('More than 960');
+//   }
+// });
+// })

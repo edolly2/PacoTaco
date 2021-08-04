@@ -1,10 +1,22 @@
 /*
- Theme Name: Paco Taco Theme
- Description: Eric Portfolio Example Website 
- Author: Eric Dollinger
- Author URL:  https://github.com/edolly2/
- Tags: Personal , Fake Portfolio, Website
+Theme Name: Paco Taco Theme
+Description: Eric Portfolio Example Website 
+Author: Eric Dollinger
+Author URL:  https://github.com/edolly2/
+Tags: Personal , Fake Portfolio, Website
 */
+
+/* TODO: Add block quote to about me and make paragrapgh easier to read */
+/* TODO: make buttons look better */
+/* TODO: give card links a destination */
+/* TODO: check all alt tags */
+/* TODO: accessibility */
+/* TODO: link logo to home */
+/* TODO: fix popup font on mobile -- to big */
+/* TODO: CLEANUP CSS */
+/* TODO: CLEANUP HTML */
+/* TODO: add comments to html and css */
+/* TODO: CLEAN UP JAVASCRIPT AND COMMENT */
 
 html {
   box-sizing: border-box;
@@ -24,7 +36,7 @@ html {
 
 body {
   background-image: url(../assets/images/mexican-wall.jpg);
-  
+
   height: 100%;
   width: 100%;
   line-height: 1.5;
@@ -152,8 +164,8 @@ header {
   background-color: rgb(248, 0, 0);
 }
 
-.btn:hover{
-  background-color:#ffff0e;
+.btn:hover {
+  background-color: #ffff0e;
 }
 
 .title-cont {
@@ -229,7 +241,6 @@ header {
   /* position: relative; */
 }
 
-
 .nav-item:hover {
   cursor: pointer;
 }
@@ -245,11 +256,12 @@ header {
 }
 
 .hamburger-icon:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
-
-.title-cont h1, .nav-link, .locations-title {
+.title-cont h1,
+.nav-link,
+.locations-title {
   text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black,
     1px 2px 2px black, 2px 1px 2px black, -1px 2px 2px black, 2px -1px 2px black,
     1px -2px 2px black, -2px 1px 2px black, -1px -2px 2px black,
@@ -271,21 +283,20 @@ cursor: pointer;
     -1px 0px 6px rgb(248, 0, 0), 0px 0px 6px rgb(248, 0, 0), 5px 5px 10px black;
 }
 
-
 /* TODO: change burrito to be responsive  */
 
-#slideshow { 
-  margin: 1.4rem auto; 
+#slideshow {
+  margin: 1.4rem auto;
   /* position: relative;  */
-  width: 100%; 
+  width: 100%;
   height: 100%;
   /* padding: 10px;  */
   /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
 }
 
-#slideshow > div { 
+#slideshow > div {
   /* position: absolute; */
-  width: 100%; 
+  width: 100%;
   /* top: 10px; 
   left: 10px; 
   right: 10px; 
@@ -299,19 +310,20 @@ cursor: pointer;
 .cards-cont {
   width: 100%;
   position: relative;
-  margin: 2.5rem 0; 
+  margin: 2.5rem 0;
 }
 
 .card {
   text-align: left;
-  background-color:rgb(0, 149, 79) ;
+  background-color: rgb(0, 149, 79);
   margin: 2.5rem 0;
   height: 30rem;
   padding: 1.4rem;
   position: relative;
 }
 
-.card h3, .social-media-cont {
+.card h3,
+.social-media-cont {
   border-bottom: 2px solid white;
   color: rgb(248, 0, 0);
   text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black,
@@ -320,20 +332,14 @@ cursor: pointer;
     -2px -1px 2px black, 1px 1px 2px black, -1px -1px 2px black,
     -1px 1px 2px black, 1px -1px 2px black, 0px 2px 2px black, 2px 0px 2px black,
     -2px 0px 2px black, 0px -2px 2px black, 0px 1px 2px black, 1px 0px 2px black,
-    0px -1px 2px black, -1px 0px 2px black, 0px 0px 2px black,
-    6px 6px 6px white, -6px 6px 6px white,
-    6px -6px 6px white, 1px 6px 6px white,
-    6px 1px 6px white, -1px 6px 6px white,
-    6px -1px 6px white, 1px -6px 6px white,
-    -6px 1px 6px white, -1px -6px 6px white,
-    -6px -1px 6px white, 1px 1px 6px white,
-    -1px -1px 6px white, -1px 1px 6px white,
-    1px -1px 6px white, 0px 6px 6px white,
-    6px 0px 6px white, -6px 0px 6px white,
-    0px -6px 6px white, 0px 1px 6px white,
-    1px 0px 6px white, 0px -1px 6px white,
+    0px -1px 2px black, -1px 0px 2px black, 0px 0px 2px black, 6px 6px 6px white,
+    -6px 6px 6px white, 6px -6px 6px white, 1px 6px 6px white, 6px 1px 6px white,
+    -1px 6px 6px white, 6px -1px 6px white, 1px -6px 6px white,
+    -6px 1px 6px white, -1px -6px 6px white, -6px -1px 6px white,
+    1px 1px 6px white, -1px -1px 6px white, -1px 1px 6px white,
+    1px -1px 6px white, 0px 6px 6px white, 6px 0px 6px white, -6px 0px 6px white,
+    0px -6px 6px white, 0px 1px 6px white, 1px 0px 6px white, 0px -1px 6px white,
     -1px 0px 6px white, 0px 0px 6px white, 5px 5px 10px black;
-
 }
 
 .card p {
@@ -343,12 +349,11 @@ cursor: pointer;
 }
 
 .card-btn {
-position: absolute;
-bottom: 1.4rem;
-left: 1.4rem;
-width: 50%;
-padding: 1.4rem 0;
-
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.4rem;
+  width: 50%;
+  padding: 1.4rem 0;
 }
 
 .card-info-and-btn-cont {
@@ -372,10 +377,10 @@ padding: 1.4rem 0;
     margin: 1.8rem;
   }
 
-  #slideshow { 
-    margin: 1.4rem auto; 
+  #slideshow {
+    margin: 1.4rem auto;
     /* position: relative;  */
-    width: 70%; 
+    width: 70%;
     height: 60%;
     /* padding: 10px;  */
     /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
@@ -392,9 +397,9 @@ footer {
 }
 
 .footer-schedule-cont h4 {
-color: black;
-font-family: 'Roboto', sans-serif;
-border-bottom: 2px solid black;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid black;
 }
 
 .social-media-cont {
@@ -408,16 +413,8 @@ border-bottom: 2px solid black;
 
 .social-media-cont i:hover {
   cursor: pointer;
-  color:rgb(0, 149, 79);
+  color: rgb(0, 149, 79);
 }
-
-
-
-
-
-
-
-
 
 .locations-title {
   margin-top: 2.5rem;
@@ -426,4 +423,77 @@ border-bottom: 2px solid black;
 
 .last-iframe {
   margin-bottom: 2.5rem;
+}
+
+.about-us-img-cont {
+  padding: 1.4rem;
+  background-color: rgb(0, 149, 79);
+}
+
+
+.is-visible {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.popup-div {
+  height: 50%;
+  width: 70%;
+  background-image: url('../assets/images/mexican-wall.jpg');
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 0.6rem;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* display: none; */
+}
+
+.popup-div-content {
+  text-align: center;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.popup-div-content h3 {
+  color: rgb(248, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin: 1.4rem;
+}
+
+.popup-div-content p {
+  margin-bottom: 2.5rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+figcaption {
+  font-style: italic;
+  color:rgb(56, 56, 56);
+}
+
+.history-cont p {
+margin: 2.5rem 0;
+text-indent: 2.5rem;
+font-size: 1.4rem;
 }
