@@ -150,4 +150,42 @@ $(document).ready(function() {
 //    alert('More than 960');
 //   }
 // });
-// })
+
+$(document).ready(() => {
+  const menuModal = $('.menu-modal-cont');
+  const menuLinks = $('.menu-title-links');
+  const modalExitBtn = $('.menu-modal-exit-btn');
+  $(menuLinks).on('click', (event) => {
+    $(menuModal).fadeIn(500);
+    if($(event.target).hasClass('appetizers-link')) {
+      $('.menu-list').hide();
+      $('.appetizers-list').show(500);
+    }
+    else if($(event.target).hasClass('combos-link')) {
+      $('.menu-list').hide();
+      $('.combos-list').show(500);
+
+    }
+    else if($(event.target).hasClass('favorites-link')) {
+      $('.menu-list').hide();
+      $('.favorites-list').show(500);
+    }
+    else if($(event.target).hasClass('alecart-link')) {
+      $('.menu-list').hide();
+      $('.alecart-list').show(500);
+    }
+    else if($(event.target).hasClass('desert-link')) {
+      $('.menu-list').hide();
+      $('.desert-list').show(500);
+    }
+    else if($(event.target).hasClass('drinks-link')) {
+      $('.menu-list').hide();
+      $('.drinks-list').show(500);
+    }
+    $(modalExitBtn).on('click', () => {
+      $(menuModal).fadeOut(500);
+
+    });
+  })
+
+});
