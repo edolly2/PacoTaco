@@ -8,7 +8,6 @@ Tags: Personal , Fake Portfolio, Website
 
 /* TODO: Add block quote to about me and make paragrapgh easier to read */
 /* TODO: make buttons look better */
-/* TODO: give card links a destination */
 /* TODO: check all alt tags */
 /* TODO: accessibility */
 /* TODO: link logo to home */
@@ -18,6 +17,7 @@ Tags: Personal , Fake Portfolio, Website
 /* TODO: add comments to html and css */
 /* TODO: CLEAN UP JAVASCRIPT AND COMMENT */
 /* TODO: fix items focus */
+/* TODO: fix drinks */
 
 html {
   box-sizing: border-box;
@@ -139,6 +139,15 @@ header {
   /* align-items: center; */
   padding: 1.4rem;
   border-radius: 0.6rem;
+}
+
+input {
+  border-radius: 0.4rem;
+}
+
+iframe {
+background-color: rgb(0, 149, 79);
+padding: 1.4rem;
 }
 
 /* .text-overflow-prevent {
@@ -263,7 +272,11 @@ header {
 .title-cont h1,
 .nav-link,
 .locations-title,
-.menu-list-titles, .menu-title-links {
+.menu-list-titles,
+.menu-title-links,
+.menu-list h4,
+.contact-para-cont h2,
+.contact-para-cont h3, .contact-list-cont h4 {
   text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black,
     1px 2px 2px black, 2px 1px 2px black, -1px 2px 2px black, 2px -1px 2px black,
     1px -2px 2px black, -2px 1px 2px black, -1px -2px 2px black,
@@ -307,6 +320,7 @@ header {
 
 .slideshow-img {
   width: 100%;
+  border-radius: 0.6rem;
 }
 
 .cards-cont {
@@ -322,6 +336,7 @@ header {
   height: 30rem;
   padding: 1.4rem;
   position: relative;
+  border-radius: 0.6rem;
 }
 
 .card h3,
@@ -396,6 +411,7 @@ footer {
 .locations-title {
   margin-top: 2.5rem;
   border-bottom: 2px solid black;
+  color: rgb(0, 149, 79);
 }
 
 .last-iframe {
@@ -405,6 +421,11 @@ footer {
 .about-us-img-cont {
   padding: 1.4rem;
   background-color: rgb(0, 149, 79);
+  border-radius: 0.6rem;
+}
+
+.about-us-img-cont img {
+  border-radius: 0.6rem;
 }
 
 .is-visible {
@@ -475,7 +496,7 @@ figcaption {
 }
 
 .menu-list {
-display: none;
+  display: none;
 }
 
 .menu-cont {
@@ -483,7 +504,8 @@ display: none;
   flex-direction: column;
 }
 
-.menu-list-titles, .menu-title-links {
+.menu-list-titles,
+.menu-title-links {
   color: rgb(0, 149, 79);
 }
 
@@ -491,22 +513,19 @@ display: none;
   margin: 3.1rem;
 }
 
+.menu-title-links {
+  margin: 1.4rem;
+}
+
 .menu-title-links:hover {
   cursor: pointer;
   color: #e1e200;
 }
 
-.menu-item {
-}
-
-.menu-dropdown-caret {
-  margin-left: 1.4rem;
-}
-
 .menu-modal-cont {
   position: fixed;
   inset: 0;
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -517,30 +536,31 @@ display: none;
   overflow-y: auto;
 }
 
-
-
 .menu-item {
+  /* border: 1.4rem solid rgb(248, 0, 0); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 0.6rem;
-  border: 2px solid rgb(0, 149, 79);
+  margin: 1.4rem 0;
 }
 
 .menu-item img {
   width: 50%;
   height: auto;
   margin: 1.4rem 0;
+  background-color: #fff;
+  border-radius: 0.6rem;
 }
 
 .menu-modal-exit-btn {
-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .menu-modal-exit-btn:hover {
-background-color: rgb(0, 149, 79);
-cursor: pointer;
+  background-color: rgb(0, 149, 79);
+  cursor: pointer;
 }
 
 .menu-modal-exit-cont {
@@ -548,6 +568,77 @@ cursor: pointer;
   position: absolute;
   top: 1.4rem;
   right: 1.4rem;
+}
+
+.menu-item-content {
+  /* background-color: #fff; */
+  border-radius: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
+  /* padding: 1.4rem; */
+}
+
+.menu-item h4 {
+  font-size: 2.25rem;
+  color: rgb(0, 149, 79);
+}
+
+.menu-item-info {
+  margin: 1.4rem;
+  /* color: black; */
+}
+
+.price {
+  margin-bottom: 1.4rem;
+  color: rgb(248, 0, 0);
+  font-weight: 900;
+}
+
+.contact-para-cont {
+  text-align: center;
+}
+
+.contact-para-cont p {
+  margin: 1.4rem;
+}
+
+.contact-para-cont h3 {
+  margin-bottom: 1.4rem;
+}
+
+.contact-para-cont h2,
+.contact-para-cont h3 {
+  color: rgb(0, 149, 79);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.8rem;
+  border-radius: 0.6rem;
+  background-color: rgb(0, 149, 79);
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
+  padding-left: 0.9rem;
+}
+
+.contact-form button {
+  margin: 1.4rem 0;
+  width: 50%;
+  padding: 1.4rem 0;
+  align-self: center;
+}
+
+.contact-list-cont h4 {
+  margin: 2.25rem 0 0.9rem 0;
+}
+.contact-list-cont ul {
+  margin-bottom: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -572,5 +663,179 @@ cursor: pointer;
     height: 60%;
     /* padding: 10px;  */
     /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+  }
+}
+
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #e1e8ee;
+  padding: 20px 30px;
+  color: #5e6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top: 1px solid #e1e8ee;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url("twitter-heart.png");
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.image {
+  margin-right: 50px;
+}
+
+Let’s add some basic style to product name and description. .description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484d;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939e;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+
+/* button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+} */
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
   }
 }
